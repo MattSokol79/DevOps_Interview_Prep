@@ -4,6 +4,7 @@
 - **A - Action**
 - **R - Result**
 
+## Agile, Scrum and general methodologies
 ### What is Agile?
 Agile is an iterative methodology that allows for rapid delivery
 of increments throughout development of a product. The 4 key values:
@@ -84,9 +85,9 @@ idea of how to work, Scrum is a method of implementing that idea in a set of rul
 
 ### 3 Amigos
 Refers to the primary perspectives to examine an increment of work before, during and after development:
-- Business Analyst - What problem are we trying to solve? Make sure everyone understands user stories.
-- Developer - How might we build a solution to solve that problem? Responsible for requirements of project.
-- Tester - What about this, what could possibly happen? Will try and find issues to enhance testing process.
+- **Business Analyst** - What problem are we trying to solve? Make sure everyone understands user stories.
+- **Developer** - How might we build a solution to solve that problem? Responsible for requirements of project.
+- **Tester** - What about this, what could possibly happen? Will try and find issues to enhance testing process.
 
 ### Persona
 Fictional characters which are created by a team to represent different user types that
@@ -95,19 +96,19 @@ behaviours and goals.
 
 ### Starfish retrospective
 Ask the team for feedback
-- Keep Doing - Something the team is doing well
-- Less of - Something that is being done but might need refining because it is not currently
+- **Keep Doing** - Something the team is doing well
+- **Less of** - Something that is being done but might need refining because it is not currently
 helpful or productive e.g. behaviour, an activity or routine
-- More of - Activities that should be done more often
-- Stop Doing - Things that dont bring value or are getting in the way
-- Start Doing - New Idea. Something you would like to bring to the table to improve the 
+- **More of** - Activities that should be done more often
+- **Stop Doing** - Things that dont bring value or are getting in the way
+- **Start Doing** - New Idea. Something you would like to bring to the table to improve the 
 process.
 
 ### Information radiators
 A display whether handwritten or electronic which a team places in a highly visible location
 so that all team members and anyone else can see latest info of current projects
 e.g. count of automated tests, velocity, reoprts etc. AKA Big Visible Chart
-- Example - Trello
+- **Example** - Trello
 
 ### Root cause Analysis
 Method of problem solving used for identifying the root causes of faults or problems. 
@@ -120,3 +121,120 @@ Basic method to use:
 - Implement the identified solutions.
 
 ### V-Model, Agile, Waterfall - Differences and use cases
+V-Model, Agile and Waterfall are all different methodologies used for design and development. The 
+V-Model and Waterfall follow a similar flow where they dont start on the next phase until the previous
+one has been completed with V-Model being more modern than Waterfall. Agile on the other hand combines
+design development and testing and iterates on them throughout the lifecycle of the product development.
+
+Use Cases:
+- **Waterfall**:
+   - If project has strict requirements and there is little room to make changes
+   - If organisation has strict processes that they adhere to 
+   - If the product owner doesnt want to be very hands on
+- **V-Model**:
+  - Used for small to medium sized projects where requirements are clearly defined and fixed
+  - When ample technical resources are available with needed technical expertise. 
+- **Agile**:
+  - If there arent many requirements as this will drive creativity and decreased time to market
+  - When you can work flexibly as you can choose your own work etc.
+  - If product owner wants to be more hands on - allows for involvement. They can make all decisions
+  on the scope and functionality of the final product. 
+  
+## SQL
+### What is a foreign key
+A foreign key is used to link two tables together via references to the primary key in one table. It is to
+ensure consistency and ensures the data matches exactly. 
+
+### What is DML, DDL etc. 
+These are the operations which can be performed on a database:
+- **DDL (Data Definition Language) - Rows** 
+  - SELECT
+  - INSERT
+  - UPDATE
+- **DML (Data Manipulation Language) - Tables**
+  - CREATE
+  - ALTER
+  - DROP
+- **DQL (Data Query Language)**
+  - GRANT
+  - REVOKE
+- **DCL (Data Control Language)**
+  - COMMIT 
+  - ROLLBACK
+ 
+**Example** 
+
+During the course, I had the opportunity to use these actions to create tables and query the Northwind
+sample Database. For one project, I was tasked to CRUD a database and import data from a csv file into SQL.
+The task involved creating a new table in SQL and import the data from the csv file into that table. I was
+also able to write functions which enabled the user to query the table in different ways such as find
+a specific movie by title, or insert a new movie into the table. These were all achieved by utilising 
+the above methods using SELECT, INSERT and CREATE. 
+
+## Python 
+### What is OOP - 4 pillars
+OOP stands for object oriented programming. The purpose of using OOP over say procedural programming is to
+reduce the amount of code being written and to prevent rewriting of code. Classes consist of attributes (variables)
+and methods (functions).
+
+**There are 4 pillars:**
+
+1. **Inheritance (most used)** - **Eliminates redundant code**.
+We can use all functions and variable from parent class
+2. **Encapsulation** - **Reduce complexity and increase reusability**.
+Also used to reduce access, making private methods/
+variables etc.
+3. **Abstraction** - **Reduce complexity and isolate impact of changes**.
+4. **Polymorphism (Many Forms)** - **Refactor code or case statements**.
+It allows us to change behaviour or attributes
+/ variables 
+
+**Example**
+
+I have utilised OOP throughout most of the projects during the python component of the DevOps course. One 
+example was a project to build a simple bank account manager. In order to this, I used OOP where I created
+different classes for user personal details, their bank details and a bank account manager which inherited
+from the other 2 classes. Each of the classes held their own functionalities which could later be called
+by the manage account class. The account worked and allowed a user to input their details and deposit or
+withdraw money from their accounts.
+
+### What is TDD and how we used it
+TDD stands for Test Driven Development and it is a methodology that focuses on creating tests, writing code
+that passes the tests and then modifying the tests to improve the program. TDD helps minimise the risk
+of failure before sending a unfinished/buggy product to production.
+
+**Example**
+
+For one of my project during the python element of the course, I was tasked with using TDD when building
+a simple bread factory. The project showed the benefits of using TDD as I was able to first create tests
+which would satisfy the requirements for a factory and then I was able to write code which passed the tests
+meaning my factory was working.
+
+## DevOps
+### What is DevOps
+DevOps is a new term emerging from the collision of two major related trends. It is a practice of operations 
+and development engineers participating together in the entire service lifecycle, from design through the 
+development process to production support. It is a bridge between development and operations which encourages
+the teams to work closer together, share responsibility deploy code and automate the pipeline.
+
+3 Primary Practice Areas of DevOps
+- **Infrastructure Automation** - Create your systems, OS configs and app deployments as code
+- **Continous Delivery** - Build, test and deploy your apps in a fast and automated manner
+- **Site Reliability Engineering** - Operate your systems; monitoring and orcheastration, sure, but also designing for operability
+in the first place.
+
+CI/CD is the backbone of DevOps. 
+- Continous Integration - A development team builds products, writes tests and stores code for collaborative 
+purposes. 
+- Continous Delivery - Engage with the operations side by deploying onto the cloud
+
+Without DevOps - Dev and Ops separate:
+- Development team develops code/finish project without considering the production environment (Operations) leading to errors
+and warnings.
+- Operations team are responsible for managing services and making sure they run smoothly as per company needs but similarly
+to development they face issues during deployment and a decrease in deployment time.
+
+So overall, using DevOps breaks down the barriers, makes teams work much closer together which dramatically
+improves the speed of product delivery which in turn improves customer satisfaction.
+
+### Why did I choose DevOps?
