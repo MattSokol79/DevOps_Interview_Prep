@@ -238,3 +238,9 @@ So overall, using DevOps breaks down the barriers, makes teams work much closer 
 improves the speed of product delivery which in turn improves customer satisfaction.
 
 ### Why did I choose DevOps?
+I first became aware of DevOps during a chat with one of my closest friends who recently began working in the field, and it 
+was then that I decided that I was ready and willing to investigate it further as a potential career. I found DevOps to be 
+particularly enticing out of many other roles within tech as it would provide me with the opportunity to improve my knowledge 
+of both programming (Development) as well as delivery (Operations) of software which will massively expand my skillset. 
+Furthermore, I find DevOps to be an exciting opportunity as it is a continuously evolving practice and so as a DevOps 
+consultant, I will have the opportunity to constantly learn and improve my skills. 
